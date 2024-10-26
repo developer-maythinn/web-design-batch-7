@@ -1,0 +1,15 @@
+<html> opening tag
+</html> closing tag
+
+<html></html> html element
+<title>Hello</title> title element
+
+<br /> self closing tag or empty tag
+
+Shift + Alt + F
+shift option f
+
+"editor.formatOnSave": true,
+
+alt + z
+option + z
