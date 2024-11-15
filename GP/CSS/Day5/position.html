@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .card {
+        width: 300px;
+        height: 300px;
+        margin: 50px auto;
+        position: relative;
+        border-radius: 20px;
+        background-color: pink;
+        overflow: hidden;
+      }
+      .card img {
+        width: inherit;
+        height: inherit;
+      }
+      .card .content {
+        background-color: rgba(165, 42, 42, 0.817);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        color: #fff;
+      }
+
+      .para {
+        height: 800px;
+        background-color: pink;
+      }
+      button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+      .sticky {
+        background-color: blueviolet;
+        color: #fff;
+        position: sticky;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="https://images.pexels.com/photos/1166209/pexels-photo-1166209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="img"
+      />
+      <div class="content">
+        <h2>Heading 2</h2>
+        <p>This is p.</p>
+      </div>
+    </div>
+
+    <h3 class="sticky">Sticky</h3>
+    <button>Go to top</button>
+    <p class="para">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo error
+      aliquid cumque, vitae deleniti quisquam assumenda itaque quibusdam
+      architecto? Voluptate mollitia pariatur facilis harum veritatis eveniet
+      accusantium unde deleniti autem.
+    </p>
+  </body>
+</html>
