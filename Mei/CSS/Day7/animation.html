@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+        color: #fff;
+      }
+      .box:hover {
+        animation-name: multiColor;
+        animation-duration: 4s;
+        /* animation-delay: 2s; */
+        animation-iteration-count: infinite;
+      }
+      @keyframes myAnimate {
+        from {
+          background-color: green;
+        }
+        to {
+          background-color: pink;
+        }
+      }
+      @keyframes multiColor {
+        0% {
+          background-color: red;
+        }
+        50% {
+          background-color: blue;
+          transform: translateX(80px);
+        }
+        70% {
+          transform: translate(80px, 50px);
+        }
+        100% {
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Box</div>
+    <h1 class="animate__animated animate__fadeInUp">An animated element</h1>
+  </body>
+</html>
