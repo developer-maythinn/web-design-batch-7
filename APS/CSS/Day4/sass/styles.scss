@@ -1,0 +1,35 @@
+@import "./variables";
+@import "./buttonStyles";
+@import "./flexCenter";
+@import "./bgGradient";
+
+.card-container{
+    h1{
+        @extend .buttonStyles;
+    }
+    p{
+        background-color: $mainColor;
+    }
+    button{
+       @extend .buttonStyles;
+    }
+}
+button{
+    @extend .buttonStyles;
+}
+.container1{
+    @include flexCenter(80vh, brown);
+}
+.container2{
+    @include flexCenter(30vh, yellow);
+}
+.container3{
+    @include flexCenter(50vh, green);
+}
+
+h1{
+    @extend .bgStyles;
+}
+button{
+    @extend .bgStyles;
+}

@@ -1,0 +1,40 @@
+.buttonStyles, button, .card-container button, .card-container h1 {
+  background-color: green;
+  color: white;
+  padding: 5px 15px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.bgStyles, button, h1 {
+  background-image: linear-gradient(rgb(239, 38, 55), yellow);
+  color: white;
+  border-radius: 10px;
+}
+
+.card-container p {
+  background-color: green;
+}
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: brown;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background-color: yellow;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: green;
+}/*# sourceMappingURL=styles.css.map */
