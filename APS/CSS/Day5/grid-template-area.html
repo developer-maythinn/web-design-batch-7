@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        max-width: 960px;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, minmax(150px, auto));
+        gap: 10px;
+        grid-template-areas:
+          "one one two three"
+          "four five five three";
+      }
+      .container div {
+        padding: 20px;
+      }
+      .container div:nth-child(1) {
+        background-color: aqua;
+        grid-area: one;
+      }
+      .container div:nth-child(2) {
+        background-color: rgb(181, 219, 26);
+        grid-area: two;
+      }
+      .container div:nth-child(3) {
+        background-color: rgb(141, 27, 101);
+        grid-area: three;
+      }
+      .container div:nth-child(4) {
+        background-color: rgb(46, 33, 222);
+        grid-area: four;
+      }
+      .container div:nth-child(5) {
+        background-color: rgb(255, 115, 0);
+        grid-area: five;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </section>
+  </body>
+</html>

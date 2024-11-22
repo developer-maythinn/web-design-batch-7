@@ -1,28 +1,87 @@
+@font-face {
+    font-family: "Hanken";
+    src: url("assets/fonts/Hanken.ttf");
+}
+$Light-red: hsl(0, 100%, 67%);
+$Orange-yellow: hsl(39, 100%, 56%);
+$Green-teal: hsl(166, 100%, 37%);
+$Cobalt-blue: hsl(234, 85%, 45%);
+$Light-slate-blue : hsl(252, 100%, 67%);
+$Light-royal-blue : hsl(241, 81%, 54%);
+
+$Violet-blue : hsla(256, 72%, 46%, 1);
+$Persian-blue : hsla(241, 72%, 46%, 0);
+
+$White: hsl(0, 0%, 100%);
+$Pale-blue: hsl(221, 100%, 96%);
+$Light-lavender: hsl(241, 100%, 89%);
+$Dark-gray-blue: hsl(224, 30%, 27%);
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Hanken", sans-serif;
 }
 .main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .card{
+        max-width: 500px;
+        height: fit-content;
+       
+        display: flex;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 4px 4px 10px #807b7b;
         .left-side{
+            width: 50%;
+            background-image: linear-gradient($Light-slate-blue
+            , $Light-royal-blue);
+           text-align: center;
+           padding: 20px;
+           border-radius: 20px;
             h3{
-                background-color: red;
+             color: $Light-lavender;
+             font-size: 16px;
             }
             .circle{
+                margin: 20px auto;
+                width: 130px;
+                height:  130px;
+                border-radius: 50%;
+                background-image: linear-gradient($Violet-blue, $Persian-blue);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
                 h1{
-                    background-color: green;
+                    color: $White;
+                    font-size: 2.8rem;
+                    line-height: 1;
                 }
                 p{
-
+                    color: $Light-lavender;
+                    font-size: 14px;
                 }
             }
             .content{
-
+                h2{
+                    color: $White;
+                }
+                p{
+                    color: $Light-lavender;
+                    font-size: 14px;
+                    padding: 15px;
+                }
             }
         }
         .right-side{
-
+            width: 50%;
+            background-color:$White;
         }
     }
 }

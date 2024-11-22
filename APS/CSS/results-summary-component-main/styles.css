@@ -1,12 +1,70 @@
+@font-face {
+  font-family: "Hanken";
+  src: url("assets/fonts/Hanken.ttf");
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Hanken", sans-serif;
 }
 
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .card {
+  max-width: 500px;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 4px 4px 10px #807b7b;
+}
+.main .card .left-side {
+  width: 50%;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+}
 .main .card .left-side h3 {
-  background-color: red;
+  color: hsl(241, 100%, 89%);
+  font-size: 16px;
+}
+.main .card .left-side .circle {
+  margin: 20px auto;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .main .card .left-side .circle h1 {
-  background-color: green;
+  color: hsl(0, 0%, 100%);
+  font-size: 2.8rem;
+  line-height: 1;
+}
+.main .card .left-side .circle p {
+  color: hsl(241, 100%, 89%);
+  font-size: 14px;
+}
+.main .card .left-side .content h2 {
+  color: hsl(0, 0%, 100%);
+}
+.main .card .left-side .content p {
+  color: hsl(241, 100%, 89%);
+  font-size: 14px;
+  padding: 15px;
+}
+.main .card .right-side {
+  width: 50%;
+  background-color: hsl(0, 0%, 100%);
 }/*# sourceMappingURL=styles.css.map */
