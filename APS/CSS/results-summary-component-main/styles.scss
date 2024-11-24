@@ -82,6 +82,87 @@ $Dark-gray-blue: hsl(224, 30%, 27%);
         .right-side{
             width: 50%;
             background-color:$White;
+            padding: 20px;
+            h2{
+                color: $Dark-gray-blue;
+                font-size: 16px;
+            }
+            ul{
+                list-style-type: none;
+                margin: 15px 0;
+                li{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: aquamarine;
+                    padding: 10px;
+                    margin: 10px 0;
+                    border-radius: 8px;
+                    .reaction-item, .memory-item, .verbal-item, .visual-item{
+                        display: flex;
+                        align-items: center;
+                        img{
+                            margin-right: 5px;
+                        }
+                        
+                        
+                       
+                       
+                    }
+                    .count{
+                        span{
+                            opacity: 0.6;
+                            font-weight: 700;
+                            color: $Dark-gray-blue;
+                        }
+                    }
+                }
+                .reaction{
+                
+                    background: lighten($Light-red, 30%);
+                    .reaction-item{
+                        b{
+                            color: $Light-red;
+                        }
+                    } 
+                }
+                .memory{
+                    background-color:  lighten($Orange-yellow, 40%);
+                    .memory-item{
+                        b{
+                            color: $Orange-yellow;
+                        }
+                    } 
+                }
+                .verbal{
+                    background-color: lighten($Green-teal, 55%);
+                    .verbal-item{
+                        b{
+                            color: $Green-teal;
+                        }
+                    } 
+                }
+                .visual{
+                    background-color: lighten($Light-slate-blue, 28%);
+                    .visual-item{
+                        b{
+                            color: $Light-slate-blue;
+                        }
+                    } 
+                }
+            }
+            button{
+                width: 100%;
+                background-color: $Dark-gray-blue;
+                padding: 10px;
+                border: 0;
+                color: $White;
+                border-radius: 30px;
+                margin-top: 12px;
+                &:hover{
+                    background-color: $Light-slate-blue;
+                }
+            }
         }
     }
 }

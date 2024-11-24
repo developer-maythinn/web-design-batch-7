@@ -67,4 +67,70 @@
 .main .card .right-side {
   width: 50%;
   background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+}
+.main .card .right-side h2 {
+  color: hsl(224, 30%, 27%);
+  font-size: 16px;
+}
+.main .card .right-side ul {
+  list-style-type: none;
+  margin: 15px 0;
+}
+.main .card .right-side ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: aquamarine;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+.main .card .right-side ul li .reaction-item, .main .card .right-side ul li .memory-item, .main .card .right-side ul li .verbal-item, .main .card .right-side ul li .visual-item {
+  display: flex;
+  align-items: center;
+}
+.main .card .right-side ul li .reaction-item img, .main .card .right-side ul li .memory-item img, .main .card .right-side ul li .verbal-item img, .main .card .right-side ul li .visual-item img {
+  margin-right: 5px;
+}
+.main .card .right-side ul li .count span {
+  opacity: 0.6;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+.main .card .right-side ul .reaction {
+  background: #fff0f0;
+}
+.main .card .right-side ul .reaction .reaction-item b {
+  color: hsl(0, 100%, 67%);
+}
+.main .card .right-side ul .memory {
+  background-color: #fff8eb;
+}
+.main .card .right-side ul .memory .memory-item b {
+  color: hsl(39, 100%, 56%);
+}
+.main .card .right-side ul .verbal {
+  background-color: #d6fff5;
+}
+.main .card .right-side ul .verbal .verbal-item b {
+  color: hsl(166, 100%, 37%);
+}
+.main .card .right-side ul .visual {
+  background-color: #ebe6ff;
+}
+.main .card .right-side ul .visual .visual-item b {
+  color: hsl(252, 100%, 67%);
+}
+.main .card .right-side button {
+  width: 100%;
+  background-color: hsl(224, 30%, 27%);
+  padding: 10px;
+  border: 0;
+  color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+  margin-top: 12px;
+}
+.main .card .right-side button:hover {
+  background-color: hsl(252, 100%, 67%);
 }/*# sourceMappingURL=styles.css.map */
