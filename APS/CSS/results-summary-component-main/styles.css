@@ -66,7 +66,7 @@
 }
 .main .card .right-side {
   width: 50%;
-  background-color: hsl(0, 0%, 100%);
+  background-color: aquamarine;
   padding: 20px;
 }
 .main .card .right-side h2 {
@@ -124,13 +124,27 @@
 }
 .main .card .right-side button {
   width: 100%;
-  background-color: hsl(224, 30%, 27%);
+  background-color: #fff;
   padding: 10px;
   border: 0;
   color: hsl(0, 0%, 100%);
   border-radius: 30px;
   margin-top: 12px;
+  box-shadow: 5px 4px 33px -11px rgba(0, 0, 0, 0.75);
 }
 .main .card .right-side button:hover {
   background-color: hsl(252, 100%, 67%);
+}
+
+@media (max-width: 768px) {
+  .main .card {
+    border-radius: initial;
+    flex-direction: column;
+  }
+  .main .card .left-side, .main .card .right-side {
+    width: 100%;
+  }
+  .main .card .left-side {
+    border-radius: 0px 0px 30px 30px;
+  }
 }/*# sourceMappingURL=styles.css.map */
