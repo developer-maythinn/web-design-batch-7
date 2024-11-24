@@ -81,7 +81,7 @@ $Dark-gray-blue: hsl(224, 30%, 27%);
         }
         .right-side{
             width: 50%;
-            background-color:aquamarine;
+            background-color:$White;
             padding: 20px;
             h2{
                 color: $Dark-gray-blue;
@@ -153,13 +153,13 @@ $Dark-gray-blue: hsl(224, 30%, 27%);
             }
             button{
                 width: 100%;
-                background-color: #fff;
+                background-color: $Dark-gray-blue;
                 padding: 10px;
                 border: 0;
                 color: $White;
                 border-radius: 30px;
                 margin-top: 12px;
-                box-shadow: 5px 4px 33px -11px rgba(0,0,0,0.75);
+                
                 &:hover{
                     background-color: $Light-slate-blue;
                 }
