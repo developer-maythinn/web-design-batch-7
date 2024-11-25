@@ -1,0 +1,35 @@
+.common, button, .card .content button, .card .content h1 {
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+
+.card .content p {
+  color: red;
+}
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
+  height: 80vh;
+  margin-top: 10px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  height: 30vh;
+  margin-top: 10px;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  height: 100vh;
+  margin-top: 10px;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,31 @@
+
+@import "./variables";
+@import "./commonStyles";
+@import "./flexCenter";
+
+.card{
+    .content{
+        h1{
+            @extend .common;
+        }
+        p{
+            color: $main-color;
+        }
+        button{
+            @extend .common;
+        }
+    } 
+}
+
+button{
+   @extend .common;
+}
+.container1{
+    @include flexCenter(brown, 80vh);
+}
+.container2{
+    @include flexCenter(yellow, 30vh);
+}
+.container3{
+    @include flexCenter(blue, 100vh);
+}

@@ -1,0 +1,12 @@
+:root {
+    --main-color: yellow;
+  }
+  h1 {
+    color: var(--main-color);
+  }
+  p {
+    background-color: var(--main-color);
+  }
+  button {
+    background-color: var(--main-color);
+  }
