@@ -1,0 +1,13 @@
+.card-container .card h1 {
+  color: red;
+}
+.card-container .card p {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+}
+.card-container .card button {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+}/*# sourceMappingURL=styles.css.map */
