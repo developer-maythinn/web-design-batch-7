@@ -37,9 +37,28 @@ $Very-Light-Gray: hsl(0, 0%, 98%);
         }
     }
     .card-container{
+        padding: 3rem 0;
         .card{
+            max-width: 100%;
+            padding: 1rem;
+            box-shadow: 0px 0px 31px -12px rgba(12,1,1,0.75); 
+            border-radius: 5px;   
+            margin: 1.5rem 0;   
+            border-top: 4px solid;
+            &:nth-child(1){
+               border-top-color: $Cyan;
+            }   
+            &:nth-child(2){
+                border-top-color: $Red;
+             }
+             &:nth-child(3){
+                border-top-color: $Orange;
+             }   
+             &:nth-child(4){
+                 border-top-color: $Blue;
+              } 
             h3{
-
+          
             }
             p{
 
