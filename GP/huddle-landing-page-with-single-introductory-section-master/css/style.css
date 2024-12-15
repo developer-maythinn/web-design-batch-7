@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero-section {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-image: url("../images/bg-mobile.svg");
+  background-color: hsl(257, 40%, 49%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 2rem;
+}
+.hero-section .logo {
+  width: 150px;
+}
+.hero-section .container .image-container {
+  margin: 3rem 0;
+}
+.hero-section .container .image-container img {
+  width: 100%;
+}
+.hero-section .container .content {
+  color: #fff;
+  text-align: center;
+}
+.hero-section .container .content p {
+  margin: 1rem 0;
+}
+.hero-section .container .content button {
+  padding: 0.8rem 4rem;
+  border-radius: 2rem;
+  border: 0;
+  margin-top: 0.5rem;
+  color: hsl(257, 40%, 49%);
+  transition: 0.6s;
+}
+.hero-section .container .content button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+.hero-section .social-icons {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.hero-section .social-icons a {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid #fff;
+}
+@media (min-width: 768px) {
+  .hero-section .container .image-container {
+    text-align: center;
+  }
+  .hero-section .container .image-container img {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .hero-section {
+    height: 100vh;
+    background-image: url("../images/bg-desktop.svg");
+  }
+  .hero-section .container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .hero-section .container .image-container img {
+    width: 40vw;
+  }
+  .hero-section .container .content {
+    text-align: initial;
+    max-width: 40vw;
+    transform: translateY(-2rem);
+  }
+  .hero-section .container .content h1 {
+    max-width: 65%;
+  }
+  .hero-section .container .content button {
+    padding: 0.5rem 3rem;
+  }
+  .hero-section .social-icons {
+    padding: 0;
+    justify-content: flex-end;
+  }
+}/*# sourceMappingURL=style.css.map */

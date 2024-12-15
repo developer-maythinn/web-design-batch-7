@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        color: #fff;
+      }
+      .box:hover {
+        animation-name: mutiColor;
+        animation-duration: 3s;
+        /* animation-delay: 2s; */
+        /* animation-iteration-count: infinite; */
+      }
+      @keyframes changeColor {
+        from {
+          background-color: red;
+        }
+        to {
+          background-color: blue;
+        }
+      }
+
+      @keyframes mutiColor {
+        0% {
+          background-color: red;
+        }
+        50% {
+          background-color: yellow;
+          transform: translateX(500px);
+        }
+        100% {
+          background-color: aqua;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Box</div>
+    <h1 class="animate__animated animate__backInLeft">An animated element</h1>
+  </body>
+</html>
