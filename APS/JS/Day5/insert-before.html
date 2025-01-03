@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="fruitsList">
+        <li>Apple</li>
+        <li>Orange</li>
+    </ul>
+
+    <script>
+        let newFruit = document.createElement("li");
+        let textNode = document.createTextNode("Mango");
+        newFruit.appendChild(textNode) // <li>Mango</li>
+
+        let fruitsList = document.getElementById("fruitsList");
+        // fruitsList.appendChild(newFruit)
+        let lists = document.getElementsByTagName("li");
+        fruitsList.insertBefore(newFruit, lists[1] )
+    </script>
+</body>
+</html>

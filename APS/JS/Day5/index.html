@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <img id="img1" src="https://images.pexels.com/photos/29835610/pexels-photo-29835610/free-photo-of-misty-mountain-retreat-in-madeira-portugal.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="img">
+    <p>Para 1</p>
+    <script>
+        document.getElementById("img1").src = "https://images.pexels.com/photos/20204193/pexels-photo-20204193/free-photo-of-mountain-peaking-from-a-cloud.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+
+        let para = document.getElementsByTagName("p")[0];
+        // para.style.color = "blue";
+        // para.style.backgroundColor = "pink";
+        para.style.cssText = `background: red; color: #fff;`
+
+    </script>
+</body>
+</html>
