@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  min-height: 100dvh;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card {
+  max-width: 320px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.container .card .cover-img {
+  width: 100%;
+}
+.container .card .content-container {
+  background-color: hsl(225, 100%, 98%);
+  padding: 0 2rem 2rem;
+}
+.container .card .content-container .content {
+  margin: 1rem 0;
+  text-align: center;
+}
+.container .card .content-container .content h2 {
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: hsl(223, 47%, 23%);
+}
+.container .card .content-container .content p {
+  margin-top: 0.7rem;
+  color: hsl(224, 23%, 55%);
+  font-size: 14px;
+}
+.container .card .content-container .plan-card {
+  display: flex;
+  background-color: rgba(233, 235, 241, 0.5607843137);
+  border-radius: 0.6rem;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .card .content-container .plan-card .plan-detail {
+  display: flex;
+}
+.container .card .content-container .plan-card .plan-detail img {
+  width: 40px;
+  height: 40px;
+}
+.container .card .content-container .plan-card .plan-detail .plan {
+  margin-left: 1rem;
+}
+.container .card .content-container .plan-card .plan-detail .plan h5 {
+  font-weight: 900;
+  font-size: 0.8rem;
+  color: hsl(223, 47%, 23%);
+}
+.container .card .content-container .plan-card .plan-detail .plan p {
+  font-size: 14px;
+}
+.container .card .content-container .plan-card a {
+  color: hsl(245, 75%, 52%);
+  font-size: 14px;
+  font-weight: 700;
+}
+.container .card .content-container .payment {
+  margin: 1.6rem 0;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 14px;
+  box-shadow: 0 8px 10px hsl(224, 23%, 55%);
+}
+.container .card .content-container .cancel {
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 900;
+}/*# sourceMappingURL=styles.css.map */
