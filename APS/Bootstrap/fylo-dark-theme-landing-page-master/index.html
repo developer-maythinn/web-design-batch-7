@@ -7,90 +7,98 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
- <section class="container-fluid">
-  <div class="row">
-    <div class="col">
-      <nav>
-        <img src="images/logo.svg" alt="img" class="img-fluid">
+ <section class="container-fluid intro-section">
+  <div class="row bg-container">
+      <nav class="d-flex justify-content-between align-items-center px-3 py-4">
+        <img src="images/logo.svg" alt="img" class="img-fluid w-25 p-2">
         <div>
-          <a href="#">Features</a>
-          <a href="#">Team</a>
-          <a href="#">Sign in</a>
+          <a class="text-decoration-none text-white mx-2 raleway-regular" href="#">Features</a>
+          <a class="text-decoration-none text-white mx-2 raleway-regular" href="#">Team</a>
+          <a class="text-decoration-none text-white mx-2 raleway-regular" href="#">Sign in</a>
         </div>
       </nav>
-    </div>
   </div>
-  <div class="row">
-    <div class="col">
-      <img src="images/illustration-intro.png" alt="img" class="img-fluid">
-      <div>
-        <h1>All your files in one secure location, accessible anywhere.</h1>
-        <p>Fylo stores all your most important files in one secure location. Access them wherever 
+  <div class="row bg-container">
+    <img src="images/illustration-intro.png" alt="img" class="intro-img img-fluid">
+    <img src="images/bg-curvy-mobile.svg" alt="img" class="img-fluid w-100 p-0 ">
+  </div>
+  <div class="row text-container ">
+      <div class="text-center ">
+        <h1 class="raleway-bold lh-base">All your files in one secure location, accessible anywhere.</h1>
+        <p class="open-sans-regular lh-base px-4 mt-3">Fylo stores all your most important files in one secure location. Access them wherever 
           you need, share and collaborate with friends family, and co-workers.</p>
-          <button> Get Started</button>
+        <button class="border-0 w-75 mt-3 text-white py-3 rounded-pill btn raleway-regular"> Get Started</button>
       </div>
-    </div>
+   
   </div>
   
  </section>
- <section class="container">
-  <div class="row">
-    <div class="col-12 col-md-6">
+ <section class="container my-4">
+  <div class="row text-center px-3">
+    <div class="col-12 col-md-6 mt-5">
       <img src="images/icon-access-anywhere.svg" alt="" class="img-fluid">
-      <h3>Access your files, anywhere</h3>
+      <h3 class="raleway-bold mt-5 mb-2">Access your files, anywhere</h3>
       <p>The ability to use a smartphone, tablet, or computer to access your account means your 
         files follow you everywhere.</p>
     </div>
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-6 mt-5">
       <img src="images/icon-security.svg" alt="" class="img-fluid">
-      <h3>Security you can trust</h3>
+      <h3 class="raleway-bold mt-5 mb-2">Security you can trust</h3>
       <p>2-factor authentication and user-controlled encryption are just a couple of the security 
         features we allow to help secure your files.</p>
     </div>
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-6 mt-5">
       <img src="images/icon-collaboration.svg" alt="" class="img-fluid">
-      <h3>Real-time collaboration</h3>
+      <h3 class="raleway-bold mt-5 mb-2">Real-time collaboration</h3>
       <p>Securely share files and folders with friends, family and colleagues for live collaboration. 
         No email attachments required.</p>
     </div>
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-6 mt-5">
       <img src="images/icon-any-file.svg" alt="" class="img-fluid">
-      <h3>Store any type of file</h3>
+      <h3 class="raleway-bold mt-5 mb-2">Store any type of file</h3>
       <p>
         Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
         file types to be securely stored and shared.</p>
     </div>
   </div>
  </section>
- <section class="container">
-  <div class="row">
+ <section class="productive-section container min-vh-100 d-flex align-items-center my-5 ">
+  <div class="row px-4">
     <div class="col-md-6">
       <img src="images/illustration-stay-productive.png" alt="img" class="img-fluid">
     </div>
     <div class="col-md-6">
-      <h2>Stay productive, wherever you are</h2>
+      <h3 class="raleway-bold mt-5">Stay productive, wherever you are</h3>
       <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
         storage needs.</p>
         <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email 
           attachments required.</p>
-          <a href="">  See how Fylo works</a>
+          <div class="link-gp pb-2">
+            <a href="#" class="text-decoration-none ">  See how Fylo works</a>
+            <i class="fa-solid fa-circle-arrow-right"></i>
+          </div>
+         
     </div>
   </div>
  </section>
- <section class="container">
+ <section class="card-section container">
   <div class="row">
     <div class="col-md-4">
       <div class="custom-card">
         <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
           become a well-oiled collaboration machine.</p>
-          <div>
-            <img src="images/profile-1.jpg" alt="img" class="img-fluid">
-            <h6>Satish Patel</h6>
-            <p>  Founder & CEO, Huddle</p>
+          <div class="d-flex align-items-center gap-2">
+            <img src="images/profile-1.jpg" alt="img" class="img-fluid rounded-circle object-fit-cover">
+            <div >
+              <h6 class="open-sans-bold ">Satish Patel</h6>
+              <p class="m-0">  Founder & CEO, Huddle</p>
+            </div>
+           
           </div>
       </div>
     </div>
