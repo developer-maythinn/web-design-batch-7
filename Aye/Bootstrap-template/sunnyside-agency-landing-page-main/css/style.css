@@ -38,4 +38,69 @@
 }
 .hero-section h1 {
   letter-spacing: 0.4rem;
+}
+
+.transform-section a {
+  color: hsl(212, 27%, 19%);
+  letter-spacing: 0.6px;
+  text-decoration-thickness: 0.4rem;
+  text-decoration-color: hsl(51, 100%, 49%);
+}
+.transform-section p {
+  color: hsl(232, 10%, 55%);
+  line-height: 1.6;
+}
+
+.graphic-container,
+.photo-container {
+  min-height: 89vh;
+  background-position: center;
+  background-size: contain;
+}
+.graphic-container p,
+.photo-container p {
+  line-height: 1.5;
+}
+
+.graphic-container {
+  background-image: url("../images/desktop/image-graphic-design.jpg");
+}
+.graphic-container h5,
+.graphic-container p {
+  color: hsl(167, 40%, 24%);
+}
+
+.photo-container {
+  background-image: url("../images/desktop/image-photography.jpg");
+}
+.photo-container h5,
+.photo-container p {
+  color: hsl(198, 62%, 26%);
+}
+
+.client-section {
+  min-height: 100vh;
+}
+.client-section h3 {
+  letter-spacing: 0.3rem;
+  color: hsl(210, 4%, 67%);
+}
+.client-section p {
+  color: hsl(232, 10%, 55%);
+}
+.client-section small {
+  color: hsl(210, 4%, 67%);
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 80vh;
+    background-image: url("../images/mobile/image-header.jpg");
+  }
+  .graphic-container {
+    background-image: url("../images/mobile/image-graphic-design.jpg");
+  }
+  .photo-container {
+    background-image: url("../images/mobile/image-photography.jpg");
+  }
 }/*# sourceMappingURL=style.css.map */

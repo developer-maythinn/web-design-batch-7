@@ -12,13 +12,13 @@ $Dark-grayish-blue: hsl(232, 10%, 55%);
 $Grayish-blue: hsl(210, 4%, 67%);
 $White: hsl(0, 0%, 100%);
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Barlow", serif;
-    font-weight: 600;
-    font-style: normal;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", serif;
+  font-weight: 600;
+  font-style: normal;
 }
 .barlow-semibold {
   font-family: "Barlow", serif;
@@ -40,12 +40,73 @@ $White: hsl(0, 0%, 100%);
   font-variation-settings: "SOFT" 0, "WONK" 0;
 }
 
-.hero-section{
-    min-height: 100vh;
-    background-image: url("../images/desktop/image-header.jpg");
-    background-size: contain;
-    background-position: center;
-    h1{
-      letter-spacing: 0.4rem;
-    }
+.hero-section {
+  min-height: 100vh;
+  background-image: url("../images/desktop/image-header.jpg");
+  background-size: contain;
+  background-position: center;
+  h1 {
+    letter-spacing: 0.4rem;
+  }
+}
+.transform-section {
+  a {
+    color: $Very-dark-desaturated-blue;
+    letter-spacing: 0.6px;
+    text-decoration-thickness: 0.4rem;
+    text-decoration-color: $Yellow;
+  }
+  p {
+    color: $Dark-grayish-blue;
+    line-height: 1.6;
+  }
+}
+.graphic-container,
+.photo-container {
+  min-height: 89vh;
+  background-position: center;
+  background-size: contain;
+  p {
+    line-height: 1.5;
+  }
+}
+.graphic-container {
+  background-image: url("../images/desktop/image-graphic-design.jpg");
+  h5,
+  p {
+    color: $Dark-desaturated-cyan;
+  }
+}
+.photo-container {
+  background-image: url("../images/desktop/image-photography.jpg");
+
+  h5,
+  p {
+    color: $Dark-blue;
+  }
+}
+.client-section {
+  min-height: 100vh;
+  h3 {
+    letter-spacing: 0.3rem;
+    color: $Grayish-blue;
+  }
+  p {
+    color: $Dark-grayish-blue;
+  }
+  small {
+    color: $Grayish-blue;
+  }
+}
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 80vh;
+    background-image: url("../images/mobile/image-header.jpg");
+  }
+  .graphic-container {
+    background-image: url("../images/mobile/image-graphic-design.jpg");
+  }
+  .photo-container {
+    background-image: url("../images/mobile/image-photography.jpg");
+  }
 }
