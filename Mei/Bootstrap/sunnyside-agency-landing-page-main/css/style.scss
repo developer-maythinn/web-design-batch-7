@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
 
 $Soft-red: hsl(7, 99%, 70%);
 $Yellow: hsl(51, 100%, 49%);
 $Dark-desaturated-cyan: hsl(167, 40%, 24%);
-$Dark-blue : hsl(198, 62%, 26%);
+$Dark-blue: hsl(198, 62%, 26%);
 $Dark-moderate-cyan-footer: hsl(168, 34%, 41%);
 $Very-dark-desaturated-blue: hsl(212, 27%, 19%);
 $Very-dark-grayish-blue: hsl(213, 9%, 39%);
@@ -11,74 +11,103 @@ $Dark-grayish-blue: hsl(232, 10%, 55%);
 $Grayish-blue: hsl(210, 4%, 67%);
 $White: hsl(0, 0%, 100%);
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-size: 18px;
-    font-family: "Barlow", serif;
-    font-weight: 600;
-    font-style: normal;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Barlow", serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .barlow-semibold {
-    font-family: "Barlow", serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  .fraunces-bold {
-    font-family: "Fraunces", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-variation-settings:
-      "SOFT" 0,
-      "WONK" 0;
-  }
-  .fraunces-extra-bold {
-    font-family: "Fraunces", serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-    font-variation-settings:
-      "SOFT" 0,
-      "WONK" 0;
-  }
+  font-family: "Barlow", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.fraunces-bold {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+}
+.fraunces-extra-bold {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+}
 
-  .hero-section{
-    background-image: url("../images/desktop/image-header.jpg");
-    background-position: center;
-    background-size: cover;
-    min-height: 100vh;
-    h1{
-      letter-spacing: 7px;
-    
-    }
-  }
-
-  .transform-container, .stand-out-container{
-    h2{
-      color: $Very-dark-desaturated-blue;
-    }
-    p{
-      color: $Dark-grayish-blue;
-    }
-  }
-  .graphic-design-container, .photography-container {
-    background-size: cover;
-    background-position: top;
+.hero-section {
+  background-image: url("../images/desktop/image-header.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  @media (max-width: 768px) {
+    background-image: url("../images/mobile/image-header.jpg");
+    background-size: contain;
     min-height: 80vh;
   }
-  .graphic-design-container {
-    background-image: url("../images/desktop/image-graphic-design.jpg");
-    h3, p{
-      color: $Dark-desaturated-cyan;
-    }
-   
+  h1 {
+    letter-spacing: 7px;
   }
-  .photography-container {
-    background-image: url("../images/desktop/image-photography.jpg");
-    h3, p{
-      color: $Dark-blue;
+}
+
+.transform-container,
+.stand-out-container {
+  h2 {
+    color: $Very-dark-desaturated-blue;
+  }
+  p {
+    color: $Dark-grayish-blue;
+  }
+}
+.graphic-design-container,
+.photography-container {
+  background-size: cover;
+  background-position: top;
+  min-height: 80vh;
+}
+.graphic-design-container {
+  background-image: url("../images/desktop/image-graphic-design.jpg");
+  @media (max-width: 768px) {
+    background-image: url("../images/mobile/image-graphic-design.jpg");
+
+  }
+  h3,
+  p {
+    color: $Dark-desaturated-cyan;
+  }
+}
+.photography-container {
+  background-image: url("../images/desktop/image-photography.jpg");
+  @media (max-width: 768px) {
+    background-image: url("../images/mobile/image-photography.jpg");
+  }
+ 
+  h3,
+  p {
+    color: $Dark-blue;
+  }
+}
+
+.client-section {
+  min-height: 100vh;
+  h2 {
+    color: $Grayish-blue;
+    letter-spacing: 3px;
+  }
+  .client-card {
+    p {
+      color: $Very-dark-grayish-blue;
+    }
+    .detail {
+      p {
+        color: $Grayish-blue;
+      }
     }
   }
+}
